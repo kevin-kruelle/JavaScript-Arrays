@@ -12,13 +12,14 @@ console.log('connected...')
 let studentScores = [98, 97, 96, 57, 67, 87, 68, 96, 95, 98, 97, 96, 95, 94, 96, 66, 76, 76, 86, 92]
 
 let numOfStudents = studentScores.length;
-let main = document.getElementById('output').innerHTML = `Number of students: ${numOfStudents}<br>`
+let main = `Students: ${numOfStudents}<br>`
 
 
 for (let i = 0; i < studentScores.length; i++) {
-    numOfStudents++;
-    main = document.getElementById('output').innerHTML += `Grade: ${studentScores[i]}<br>`
+    main += `Grade: ${studentScores[i]}<br>`
 }
+
+document.getElementById('output').innerHTML += main
 
 
 
