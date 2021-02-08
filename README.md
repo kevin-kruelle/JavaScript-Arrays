@@ -8,7 +8,7 @@ Activiy should be done in groups, size 2-4.
 
 Create an app that will take an array of student scores and output to the web page class metrics
 
-Write out the logic to accomplish this first. This will be your game plan for writing the solution with code
+Write out the logic to accomplish this objective first. This will be your game plan for writing the solution with code
 
 Each step should be completed by a new group member as the rest of the group helps
 
