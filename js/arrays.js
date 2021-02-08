@@ -49,7 +49,7 @@ for (let i = 0; i < studentScores.length; i++) {
 }
 
 
-document.getElementById('output').innerHTML += `${main}<br>Highest Score: ${highestScore}<br> Lowest Score: ${lowestScore}<br> Average score: ${avg}<br> Median: ${median}<br> Scores 70% or higher: ${passingScores.length} students scored higher than 70%`
+document.getElementById('output').innerHTML += `${main}<br>Highest Score: ${highestScore}<br> Lowest Score: ${lowestScore}<br> Average score: ${avg}<br> Median: ${median}<br> Scores higher than 70%: ${passingScores.length} students scored higher than 70%.`
 
 
 
