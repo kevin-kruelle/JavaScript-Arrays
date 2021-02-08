@@ -21,8 +21,12 @@ main = `Students: ${numOfStudents}<br>`
 
 let highestScore = Math.max(...studentScores);
 let lowestScore = Math.min(...studentScores);
-let sum = studentScores.reduce((previous, current) => current += previous)
+let sum = studentScores.reduce((accumulator, currentValue) => accumulator += currentValue)
 let avg = sum / studentScores.length;
+studentScores.sort((a, b) => a - b);
+let lowMiddle = Math.floor((studentScores.length - 1) / 2);
+let highMiddle = Math.ceil((studentScores.length - 1) / 2);
+let median = (studentScores[lowMiddle] + studentScores[highMiddle]) / 2;
 
 
 for (let i = 0; i < studentScores.length; i++) {
@@ -30,7 +34,7 @@ for (let i = 0; i < studentScores.length; i++) {
 }
 
 
-document.getElementById('output').innerHTML += `${main}<br>Highest Score: ${highestScore}<br> Lowest Score: ${lowestScore}<br> Average score: ${avg} `
+document.getElementById('output').innerHTML += `${main}<br>Highest Score: ${highestScore}<br> Lowest Score: ${lowestScore}<br> Average score: ${avg}<br> Median: ${median} `
 
 
 
